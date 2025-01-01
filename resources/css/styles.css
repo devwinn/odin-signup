@@ -27,7 +27,7 @@
 #sidebar-content {
     position: absolute;
     font-family: norse-font, sans-serif;
-    font-size: 40px;
+    font-size: 5rem;
     background-color: aqua;
     background: black;
     opacity: 0.6;
@@ -35,5 +35,5 @@
     top: 45%;
     left: 12%;
     text-align: center;
-
+    
 }

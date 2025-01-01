@@ -398,3 +398,13 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+### replit ###
+# Replit config file
+.replit
+
+# Replit Nix config file
+replit.nix
+
+# End of https://www.toptal.com/developers/gitignore/api/replit

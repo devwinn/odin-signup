@@ -8,40 +8,50 @@
     src: url(../fonts/Norse-Bold.otf);
 }
 
-:root {
+#form-container {
 
-}
-
-#sidebar-container{
-    position: absolute;
-    height: 100vh;
-    width: 30vw;
-
-    border: solid, 3px, black;
-}
-
-#sidebar-img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-#sidebar-content {
-    position: relative;
-    font-family: norse-font, sans-serif;
-    font-size: 6rem;
-    background-color: aqua;
-    background: black;
-    opacity: 0.6;
-    color: white;
-    top: 25%;
-    text-align: center;
-
+    /*DELETE BELOW */
     border: solid, 3px, red;
-
-    
 }
 
 #odin-img {
     height: 6rem;
+
+    /* DELETE BELOW */
+    /* border: solid 2px, red; */
+}
+
+#sidebar-container{
+    /* sidebar image found downloaded from site listed below */
+    /* https://unsplash.com/photos/a-blurry-photo-of-a-carnival-ride-7utzACgbCdE */
+    background-image: url(../images/jason-leung-7utzACgbCdE-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    width: clamp(27%, 30vw, 33vw);
+
+    /* DELETE BELOW */
+    border: solid, 3px, black;
+}
+
+#sidebar-content {
+    align-items: center;
+    background: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: norse-font, sans-serif;
+    font-size: 5rem;
+    justify-content: center;
+    opacity: 0.6;
+    position: relative;
+    text-align: center;
+    top: 25%;
+
+    /* DELETE BELOW */
+    /* border: solid, 3px, red; */
+}
+
+.sidebar-footer {
+    text-align: center;
 }

@@ -15,13 +15,20 @@ body {
 form {
     height: fit-content;
     width: 100%;
-
     /* DELETE BELOW */
     border: solid, 3px, blue;
 }
 
+form, h2, .login, .submit {
+    margin-left:5%;
+
+} 
 
 #form-container {
+    border: solid, 3px, gray;
+}
+
+#main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,8 +36,6 @@ form {
     /*DELETE BELOW */
     border: solid, 3px, red;
 }
-
-
 
 #odin-img {
     height: 6rem;
@@ -64,9 +69,11 @@ form {
 }
 
 .element-group {
-    margin-bottom: 20px;
-    margin-left:5%;
     width:60%
+}
+
+.element-group:first-of-type{
+    margin-top: 15px;
 }
 
 .form-element {
@@ -74,6 +81,18 @@ form {
     flex-direction: column;
 }
 
+.form-submit {
+    position:relative;
+    top: 45px;
+    color: white;
+    background-color: #596D48;
+}
+
+.login {
+    position:relative;
+    top: 70px;
+
+}
 .sidebar-footer {
     text-align: center;
 }

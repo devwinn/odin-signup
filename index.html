@@ -19,8 +19,7 @@
     <div id="main-container">
         <div id="form-container">
             <h2>Let's Do This!</h2>
-
-            <form action="resources/js/form.js" method="post">
+            <form action="resources/js/form.js" method="post" id="form">
                 <div class="element-group">
                     <div class="form-element">
                         <label for="first-name">First Name</label>
@@ -51,11 +50,12 @@
                         <input type="text" id="confirmation">
                     </div>
                 </div>
-                <input type="submit" value="Create Account" class="form-submit">
             </form>
-            <span class="login">Already have an account?</span>
-
         </div>
+
+        <button type="submit" form="form" class="form-submit">Create Account</button>
+        <span class="login">Already have an account? Log in</span>
+
     </div>
 
 </body>

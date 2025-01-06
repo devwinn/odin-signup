@@ -14,27 +14,29 @@ body {
 
 form {
     height: fit-content;
-    width: 100%;
     /* DELETE BELOW */
     border: solid, 3px, blue;
 }
 
-form, h2, .login, .submit {
+form, h2, .login, .form-submit {
     margin-left:5%;
-
 } 
 
+#form-container, .form-submit, .login {
+    position: relative;
+    top: 35%;
+}
+
 #form-container {
-    border: solid, 3px, gray;
+    /* need to work on the box shadow */
+    box-shadow: 0px 5px 15px #888, 0px -1px 1px #f8f8f8;
+    padding: 15px 0px 30px 0px;
 }
 
 #main-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
-    /*DELETE BELOW */
-    border: solid, 3px, red;
 }
 
 #odin-img {
@@ -46,11 +48,8 @@ form, h2, .login, .submit {
     /* https://unsplash.com/photos/a-blurry-photo-of-a-carnival-ride-7utzACgbCdE */
     background-image: url(../images/jason-leung-7utzACgbCdE-unsplash.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 99.4vh;
     width: clamp(27%, 30vw, 33vw);
-
-    /* DELETE BELOW */
-    border: solid, 3px, black;
 }
 
 #sidebar-content {
@@ -69,7 +68,10 @@ form, h2, .login, .submit {
 }
 
 .element-group {
-    width:60%
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+
 }
 
 .element-group:first-of-type{
@@ -79,20 +81,23 @@ form, h2, .login, .submit {
 .form-element {
     display: flex;
     flex-direction: column;
+    width: 45%;
 }
 
 .form-submit {
-    position:relative;
-    top: 45px;
-    color: white;
+    border-radius: 5px;
     background-color: #596D48;
+    color: white;
+    margin-top: 25px;
+    padding: 5px 30px;
+    width: fit-content;
 }
 
 .login {
+    margin-top: 30px;
     position:relative;
-    top: 70px;
-
 }
+
 .sidebar-footer {
     text-align: center;
 }

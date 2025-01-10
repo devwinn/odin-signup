@@ -43,11 +43,13 @@
                 <div class="element-group">
                     <div class="form-element">
                         <label for="password">Password</label>
-                        <input type="text" id="password">
+                        <input type="password" id="password"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
                     </div>
                     <div class="form-element">
                         <label for="confirmation">Confirm Password</label>
-                        <input type="text" id="confirmation">
+                        <input type="password" id="confirmation"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
                     </div>
                 </div>
             </form>

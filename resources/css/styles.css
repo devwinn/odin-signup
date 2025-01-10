@@ -1,57 +1,162 @@
-* {
-    padding: 0;
-    margin: 0;
-  }
-
 @font-face {
     font-family: norse-font;
     src: url(../fonts/Norse-Bold.otf);
 }
 
-#form-container {
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
 
-    /*DELETE BELOW */
-    border: solid, 3px, red;
+@font-face {
+    font-family: roboto-bold;
+    src: url(../fonts/Roboto/static/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: roboto-semibold;
+    src: url(../fonts/Roboto/static/Roboto_SemiCondensed-SemiBold.ttf);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+form {
+    height: fit-content;
+    min-width: fit-content;
+    width: 75%;
+}
+
+h2 {
+    font-size: 28px;
+    letter-spacing: .5px;
+    margin-top: 10px;
+}
+
+input {
+    border: 2px solid rgb(78, 78, 78);
+    border-radius: 5px;
+    height: 35px;
+    font-family: roboto;
+    font-size: large;
+    margin-top: 2px;
+    min-width: 200px;
+    outline: none;
+    padding-left: 7px;
+}
+
+input:focus {
+    border: 3px solid rgb(101, 181, 228);
+    box-shadow: 0px 3px 15px #888, 0px -1px 1px #f8f8f8;
+}
+
+label {
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+
+form, h2, .login, .form-submit {
+    margin-left: 3%;
+} 
+
+#form-container, .form-submit, .login {
+    position: relative;
+    top: 36.5%;
+}
+
+#form-container {
+    /* need to work on the box shadow */
+    box-shadow: 0px 5px 15px #888, 0px -1px 1px #f8f8f8;
+    font-family: roboto-semibold;
+    padding: 15px 0px 30px 0px;
+}
+
+#main-container {
+    color: rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 #odin-img {
-    height: 6rem;
-
-    /* DELETE BELOW */
-    /* border: solid 2px, red; */
+    height: 8rem;
 }
 
-#sidebar-container{
+#sidebar-container {
     /* sidebar image found downloaded from site listed below */
     /* https://unsplash.com/photos/a-blurry-photo-of-a-carnival-ride-7utzACgbCdE */
     background-image: url(../images/jason-leung-7utzACgbCdE-unsplash.jpg);
     background-size: cover;
     height: 100vh;
-    position: absolute;
     width: clamp(27%, 30vw, 33vw);
-
-    /* DELETE BELOW */
-    border: solid, 3px, black;
 }
 
 #sidebar-content {
     align-items: center;
-    background: black;
+    background: rgb(0 0 0 / 30%);
     color: white;
     display: flex;
     flex-wrap: wrap;
-    font-family: norse-font, sans-serif;
-    font-size: 5rem;
     justify-content: center;
-    opacity: 0.6;
     position: relative;
+    padding: 15px 0;
     text-align: center;
-    top: 25%;
+    top: 23.5%;
+}
 
-    /* DELETE BELOW */
-    /* border: solid, 3px, red; */
+#password:invalid, #confirmation:invalid {
+    border: 3px solid rgb(255, 55, 55);
+
+}
+
+.element-group {
+    display: flex;
+    padding-top: 20px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    width: clamp(200px, 350px, 25%);
+}
+
+.form-element:last-of-type {
+    margin-left: 100px;
+}
+
+.form-submit {
+    border-radius: 7px;
+    background-color: #596D48;
+    color: white;
+    font-family: roboto-bold;
+    font-size: medium;
+    margin-top: 30px;
+    padding: 12px 60px;
+    width: fit-content;
+}
+
+.login {
+    margin-top: 30px;
+    position:relative;
+    font-family: roboto-semibold;
+    font-size: large;
 }
 
 .sidebar-footer {
     text-align: center;
+}
+
+.sidebar-text {
+    font-family: norse-font, sans-serif;
+    font-size: 6rem;
 }
